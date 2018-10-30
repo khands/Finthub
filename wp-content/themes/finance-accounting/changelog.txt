@@ -1,0 +1,18 @@
+Version: 0.1
+	Initial Version Released
+
+Version: 0.2
+	Done minor css customization.
+	Resolved Errors.
+	Added proper theme urls.
+
+Version: 0.3
+	Changed the pexel image url to pixabay image url.
+
+Version: 0.4
+	Changed http to https in footer.
+	Resolved the error of "get_theme_mod( 'finance_accounting_google_plus_url','' )".
+
+Version: 0.4.1
+	Added jquery in front of nivo-slider.
+	Resolved the translation issue of "Working Time".
