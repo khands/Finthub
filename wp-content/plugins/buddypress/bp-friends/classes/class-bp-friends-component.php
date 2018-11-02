@@ -236,16 +236,16 @@ class BP_Friends_Component extends BP_Component {
 			if ( !empty( $count ) ) {
 				$title = sprintf(
 					/* translators: %s: Pending friend request count for the current user */
-					_x( 'Friends %s', 'My Account Friends menu', 'buddypress' ),
+					_x( 'Network %s', 'My Account Friends menu', 'buddypress' ),
 					'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 				);
 				$pending = sprintf(
 					/* translators: %s: Pending friend request count for the current user */
-					_x( 'Pending Requests %s', 'My Account Friends menu sub nav', 'buddypress' ),
+					_x( 'Pending Connection Requests %s', 'My Account Friends menu sub nav', 'buddypress' ),
 					'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 				);
 			} else {
-				$title   = _x( 'Friends',            'My Account Friends menu',         'buddypress' );
+				$title   = _x( 'Connections',            'My Account Friends menu',         'buddypress' );
 				$pending = _x( 'No Pending Requests','My Account Friends menu sub nav', 'buddypress' );
 			}
 
@@ -261,7 +261,7 @@ class BP_Friends_Component extends BP_Component {
 			$wp_admin_nav[] = array(
 				'parent'   => 'my-account-' . $this->id,
 				'id'       => 'my-account-' . $this->id . '-friendships',
-				'title'    => _x( 'Friendships', 'My Account Friends menu sub nav', 'buddypress' ),
+				'title'    => _x( 'Connections', 'My Account Friends menu sub nav', 'buddypress' ),
 				'href'     => $friends_link,
 				'position' => 10
 			);
@@ -291,7 +291,7 @@ class BP_Friends_Component extends BP_Component {
 			$bp = buddypress();
 
 			if ( bp_is_my_profile() ) {
-				$bp->bp_options_title = __( 'Friendships', 'buddypress' );
+				$bp->bp_options_title = __( 'Connections', 'buddypress' );
 			} else {
 				$bp->bp_options_avatar = bp_core_fetch_avatar( array(
 					'item_id' => bp_displayed_user_id(),
