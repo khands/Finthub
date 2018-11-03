@@ -29,7 +29,7 @@ class Friend extends BuddypressCommand {
 	 * ## OPTIONS
 	 *
 	 * <initiator>
-	 * : ID of the user who is sending the friendship request. Accepts either a user_login or a numeric ID.
+	 * : ID of the user who is sending the connection request. Accepts either a user_login or a numeric ID.
 	 *
 	 * <friend>
 	 * : ID of the user whose friendship is being requested. Accepts either a user_login or a numeric ID.
@@ -121,7 +121,7 @@ class Friend extends BuddypressCommand {
 	}
 
 	/**
-	 * Mark a friendship request as accepted.
+	 * Mark a connection request as accepted.
 	 *
 	 * ## OPTIONS
 	 *
@@ -149,7 +149,7 @@ class Friend extends BuddypressCommand {
 	}
 
 	/**
-	 * Mark a friendship request as rejected.
+	 * Mark a connection request as rejected.
 	 *
 	 * ## OPTIONS
 	 *

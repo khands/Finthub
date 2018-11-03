@@ -8,7 +8,7 @@
  */
 
 /**
- * Catch and process Remove Friendship requests.
+ * Catch and process Remove connection requests.
  *
  * @since 1.0.1
  */
@@ -38,7 +38,7 @@ function friends_action_remove_friend() {
 	} elseif ( 'not_friends' == $friendship_status ) {
 		bp_core_add_message( __( 'You are not yet friends with this user', 'buddypress' ), 'error' );
 	} else {
-		bp_core_add_message( __( 'You have a pending friendship request with this user', 'buddypress' ), 'error' );
+		bp_core_add_message( __( 'You have a pending connection request with this user', 'buddypress' ), 'error' );
 	}
 
 	bp_core_redirect( wp_get_referer() );

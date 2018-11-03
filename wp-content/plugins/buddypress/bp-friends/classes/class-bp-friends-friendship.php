@@ -172,11 +172,11 @@ class BP_Friends_Friendship {
 		$this->date_created      = apply_filters( 'friends_friendship_date_created_before_save',      $this->date_created,      $this->id );
 
 		/**
-		 * Fires before processing and saving the current friendship request.
+		 * Fires before processing and saving the current connection request.
 		 *
 		 * @since 1.0.0
 		 *
-		 * @param BP_Friends_Friendship $value Current friendship request object.
+		 * @param BP_Friends_Friendship $value Current connection request object.
 		 */
 		do_action_ref_array( 'friends_friendship_before_save', array( &$this ) );
 
@@ -191,11 +191,11 @@ class BP_Friends_Friendship {
 		}
 
 		/**
-		 * Fires after processing and saving the current friendship request.
+		 * Fires after processing and saving the current connection request.
 		 *
 		 * @since 1.0.0
 		 *
-		 * @param BP_Friends_Friendship $value Current friendship request object.
+		 * @param BP_Friends_Friendship $value Current connection request object.
 		 */
 		do_action( 'friends_friendship_after_save', array( &$this ) );
 
@@ -452,7 +452,7 @@ class BP_Friends_Friendship {
 	 * @since 1.2.0
 	 *
 	 * @param int $user_id The ID of the user who has received the
-	 *                     friendship requests.
+	 *                     connection requests.
 	 * @return array|bool An array of user IDs, or false if none are found.
 	 */
 	public static function get_friendship_request_user_ids( $user_id ) {
@@ -721,7 +721,7 @@ class BP_Friends_Friendship {
 	}
 
 	/**
-	 * Remove a friendship or a friendship request INITIATED BY the logged-in user.
+	 * Remove a friendship or a connection request INITIATED BY the logged-in user.
 	 *
 	 * @since 1.6.0
 	 *
@@ -737,7 +737,7 @@ class BP_Friends_Friendship {
 	}
 
 	/**
-	 * Remove a friendship or a friendship request MADE OF the logged-in user.
+	 * Remove a friendship or a connection request MADE OF the logged-in user.
 	 *
 	 * @since 1.0.0
 	 *

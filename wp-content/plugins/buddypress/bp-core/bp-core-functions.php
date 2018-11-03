@@ -3402,7 +3402,7 @@ function bp_email_get_schema() {
 		),
 		'friends-request' => array(
 			/* translators: do not remove {} brackets or translate its contents. */
-			'post_title'   => __( '[{{{site.name}}}] New friendship request from {{initiator.name}}', 'buddypress' ),
+			'post_title'   => __( '[{{{site.name}}}] New connection request from {{initiator.name}}', 'buddypress' ),
 			/* translators: do not remove {} brackets or translate its contents. */
 			'post_content' => __( "<a href=\"{{{initiator.url}}}\">{{initiator.name}}</a> wants to add you as a friend.\n\nTo accept this request and manage all of your pending requests, visit: <a href=\"{{{friend-requests.url}}}\">{{{friend-requests.url}}}</a>", 'buddypress' ),
 			/* translators: do not remove {} brackets or translate its contents. */
@@ -3410,7 +3410,7 @@ function bp_email_get_schema() {
 		),
 		'friends-request-accepted' => array(
 			/* translators: do not remove {} brackets or translate its contents. */
-			'post_title'   => __( '[{{{site.name}}}] {{friend.name}} accepted your friendship request', 'buddypress' ),
+			'post_title'   => __( '[{{{site.name}}}] {{friend.name}} accepted your connection request', 'buddypress' ),
 			/* translators: do not remove {} brackets or translate its contents. */
 			'post_content' => __( "<a href=\"{{{friendship.url}}}\">{{friend.name}}</a> accepted your friend request.", 'buddypress' ),
 			/* translators: do not remove {} brackets or translate its contents. */
@@ -3556,7 +3556,7 @@ function bp_email_get_type_schema( $field = 'description' ) {
 		'description'	=> __( 'Recipient has had a friend request accepted by a member.', 'buddypress' ),
 		'unsubscribe'	=> array(
 			'meta_key'	=> 'notification_friends_friendship_accepted',
-			'message'	=> __( 'You will no longer receive emails when someone accepts your friendship request.', 'buddypress' ),
+			'message'	=> __( 'You will no longer receive emails when someone accepts your connection request.', 'buddypress' ),
 		),
 	);
 

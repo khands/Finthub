@@ -368,7 +368,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/requests/cancel/' . $potential_friend_id . '/', 'friends_withdraw_friendship' ),
-					'link_text'         => __( 'Cancel Friendship Request', 'buddypress' ),
+					'link_text'         => __( 'Cancel connection request', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'remove',
 					'link_class'        => 'friendship-button pending_friend requested'
@@ -458,7 +458,7 @@ function bp_get_friend_ids( $user_id = 0 ) {
 }
 
 /**
- * Get a user's friendship requests.
+ * Get a user's connection requests.
  *
  * Note that we return a 0 if no pending requests are found. This is necessary
  * because of the structure of the $include parameter in bp_has_members().
@@ -487,7 +487,7 @@ function bp_get_friendship_requests( $user_id = 0 ) {
 	}
 
 	/**
-	 * Filters the total pending friendship requests for a user.
+	 * Filters the total pending connection requests for a user.
 	 *
 	 * @since 1.2.0
 	 * @since 2.6.0 Added the `$user_id` parameter.
@@ -532,7 +532,7 @@ function bp_friend_friendship_id() {
 	}
 
 /**
- * Output the URL for accepting the current friendship request in the loop.
+ * Output the URL for accepting the current connection request in the loop.
  *
  * @since 1.0.0
  */
@@ -540,7 +540,7 @@ function bp_friend_accept_request_link() {
 	echo bp_get_friend_accept_request_link();
 }
 	/**
-	 * Return the URL for accepting the current friendship request in the loop.
+	 * Return the URL for accepting the current connection request in the loop.
 	 *
 	 * @since 1.0.0
 	 *
@@ -555,7 +555,7 @@ function bp_friend_accept_request_link() {
 		}
 
 		/**
-		 * Filters the URL for accepting the current friendship request in the loop.
+		 * Filters the URL for accepting the current connection request in the loop.
 		 *
 		 * @since 1.0.0
 		 * @since 2.6.0 Added the `$friendship_id` parameter.
@@ -567,7 +567,7 @@ function bp_friend_accept_request_link() {
 	}
 
 /**
- * Output the URL for rejecting the current friendship request in the loop.
+ * Output the URL for rejecting the current connection request in the loop.
  *
  * @since 1.0.0
  */
@@ -575,7 +575,7 @@ function bp_friend_reject_request_link() {
 	echo bp_get_friend_reject_request_link();
 }
 	/**
-	 * Return the URL for rejecting the current friendship request in the loop.
+	 * Return the URL for rejecting the current connection request in the loop.
 	 *
 	 * @since 1.0.0
 	 *
@@ -590,7 +590,7 @@ function bp_friend_reject_request_link() {
 		}
 
 		/**
-		 * Filters the URL for rejecting the current friendship request in the loop.
+		 * Filters the URL for rejecting the current connection request in the loop.
 		 *
 		 * @since 1.0.0
 		 * @since 2.6.0 Added the `$friendship_id` parameter.
@@ -635,7 +635,7 @@ function bp_total_friend_count( $user_id = 0 ) {
 	add_filter( 'bp_get_total_friend_count', 'bp_core_number_format' );
 
 /**
- * Output the total friendship request count for a given user.
+ * Output the total connection request count for a given user.
  *
  * @since 1.2.0
  *
@@ -647,7 +647,7 @@ function bp_friend_total_requests_count( $user_id = 0 ) {
 	echo bp_friend_get_total_requests_count( $user_id );
 }
 	/**
-	 * Return the total friendship request count for a given user.
+	 * Return the total connection request count for a given user.
 	 *
 	 * @since 1.2.0
 	 *
@@ -660,12 +660,12 @@ function bp_friend_total_requests_count( $user_id = 0 ) {
 			$user_id = bp_loggedin_user_id();
 
 		/**
-		 * Filters the total friendship request count for a given user.
+		 * Filters the total connection request count for a given user.
 		 *
 		 * @since 1.2.0
 		 * @since 2.6.0 Added the `$user_id` parameter.
 		 *
-		 * @param int $value   Friendship request count.
+		 * @param int $value   connection request count.
 		 * @param int $user_id ID of the queried user.
 		 */
 		return apply_filters( 'bp_friend_get_total_requests_count', count( BP_Friends_Friendship::get_friend_user_ids( $user_id, true ) ), $user_id );

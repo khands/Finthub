@@ -207,7 +207,7 @@ function bp_nouveau_ajax_addremove_friend() {
 		} else {
 			$response['feedback'] = sprintf(
 				'<div class="bp-feedback error">%s</div>',
-				esc_html__( 'Friendship request could not be cancelled.', 'buddypress' )
+				esc_html__( 'connection request could not be cancelled.', 'buddypress' )
 			);
 
 			wp_send_json_error( $response );
