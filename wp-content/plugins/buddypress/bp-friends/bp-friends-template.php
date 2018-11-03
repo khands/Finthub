@@ -384,7 +384,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button awaiting_response_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => bp_loggedin_user_domain() . bp_get_friends_slug() . '/requests/',
-					'link_text'         => __( 'Friendship Requested', 'buddypress' ),
+					'link_text'         => __( 'Connection Requested', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'remove',
 					'link_class'        => 'friendship-button awaiting_response_friend requested'
@@ -400,7 +400,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button is_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/remove-friend/' . $potential_friend_id . '/', 'friends_remove_friend' ),
-					'link_text'         => __( 'Cancel Friendship', 'buddypress' ),
+					'link_text'         => __( 'Cancel Connection', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'remove',
 					'link_class'        => 'friendship-button is_friend remove'

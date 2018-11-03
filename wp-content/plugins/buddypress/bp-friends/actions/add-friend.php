@@ -30,9 +30,9 @@ function friends_action_add_friend() {
 			return false;
 
 		if ( !friends_add_friend( bp_loggedin_user_id(), $potential_friend_id ) ) {
-			bp_core_add_message( __( 'Friendship could not be requested.', 'buddypress' ), 'error' );
+			bp_core_add_message( __( 'Connection could not be requested.', 'buddypress' ), 'error' );
 		} else {
-			bp_core_add_message( __( 'Friendship requested', 'buddypress' ) );
+			bp_core_add_message( __( 'Connection requested', 'buddypress' ) );
 		}
 
 	} elseif ( 'is_friend' == $friendship_status ) {

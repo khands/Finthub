@@ -30,9 +30,9 @@ function friends_action_remove_friend() {
 			return false;
 
 		if ( !friends_remove_friend( bp_loggedin_user_id(), $potential_friend_id ) ) {
-			bp_core_add_message( __( 'Friendship could not be canceled.', 'buddypress' ), 'error' );
+			bp_core_add_message( __( 'Connection could not be canceled.', 'buddypress' ), 'error' );
 		} else {
-			bp_core_add_message( __( 'Friendship canceled', 'buddypress' ) );
+			bp_core_add_message( __( 'Connection canceled', 'buddypress' ) );
 		}
 
 	} elseif ( 'not_friends' == $friendship_status ) {
