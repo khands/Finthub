@@ -902,9 +902,9 @@ jq(document).ready( function() {
 		};
 	});
 
-	/** Friendship Requests **************************************/
+	/** connection requests **************************************/
 
-	/* Accept and Reject friendship request buttons */
+	/* Accept and Reject connection request buttons */
 	jq("ul#friend-list a.accept, ul#friend-list a.reject").click( function() {
 		var button = jq(this);
 		var li = jq(this).parents('ul#friend-list li');

@@ -18,7 +18,7 @@ do_action( 'bp_before_member_friend_requests_content' ); ?>
 
 	<h2 class="bp-screen-reader-text"><?php
 		/* translators: accessibility text */
-		_e( 'Friendship requests', 'buddypress' );
+		_e( 'connection requests', 'buddypress' );
 	?></h2>
 
 	<div id="pag-top" class="pagination no-ajax">
@@ -105,7 +105,7 @@ do_action( 'bp_before_member_friend_requests_content' ); ?>
 <?php else: ?>
 
 	<div id="message" class="info">
-		<p><?php _e( 'You have no pending friendship requests.', 'buddypress' ); ?></p>
+		<p><?php _e( 'You have no pending connection requests.', 'buddypress' ); ?></p>
 	</div>
 
 <?php endif;?>

@@ -121,7 +121,7 @@ get_header( 'buddypress' ); ?>
 
 							<?php if ( bp_is_active( 'friends' ) ) : ?>
 
-								<option value="friendship_accepted,friendship_created"><?php _e( 'Friendships', 'buddypress' ); ?></option>
+								<option value="friendship_accepted,friendship_created"><?php _e( 'Connections', 'buddypress' ); ?></option>
 
 							<?php endif; ?>
 

@@ -127,7 +127,7 @@ function bp_nouveau_ajax_addremove_friend() {
 				array(
 					'feedback' => sprintf(
 						'<div class="bp-feedback success">%s</div>',
-						esc_html__( 'Friendship accepted.', 'buddypress' )
+						esc_html__( 'Connection accepted.', 'buddypress' )
 					),
 					'type'     => 'success',
 					'is_user'  => true,
@@ -151,7 +151,7 @@ function bp_nouveau_ajax_addremove_friend() {
 				array(
 					'feedback' => sprintf(
 						'<div class="bp-feedback success">%s</div>',
-						esc_html__( 'Friendship rejected.', 'buddypress' )
+						esc_html__( 'Connection rejected.', 'buddypress' )
 					),
 					'type'     => 'success',
 					'is_user'  => true,
@@ -164,7 +164,7 @@ function bp_nouveau_ajax_addremove_friend() {
 		if ( ! friends_remove_friend( bp_loggedin_user_id(), $friend_id ) ) {
 			$response['feedback'] = sprintf(
 				'<div class="bp-feedback error">%s</div>',
-				esc_html__( 'Friendship could not be cancelled.', 'buddypress' )
+				esc_html__( 'Connection could not be cancelled.', 'buddypress' )
 			);
 
 			wp_send_json_error( $response );
@@ -177,7 +177,7 @@ function bp_nouveau_ajax_addremove_friend() {
 				$response = array(
 					'feedback' => sprintf(
 						'<div class="bp-feedback success">%s</div>',
-						esc_html__( 'Friendship cancelled.', 'buddypress' )
+						esc_html__( 'Connection cancelled.', 'buddypress' )
 					),
 					'type'     => 'success',
 					'is_user'  => $is_user,
@@ -192,7 +192,7 @@ function bp_nouveau_ajax_addremove_friend() {
 		if ( ! friends_add_friend( bp_loggedin_user_id(), $friend_id ) ) {
 			$response['feedback'] = sprintf(
 				'<div class="bp-feedback error">%s</div>',
-				esc_html__( 'Friendship could not be requested.', 'buddypress' )
+				esc_html__( 'Connection could not be requested.', 'buddypress' )
 			);
 
 			wp_send_json_error( $response );
@@ -207,7 +207,7 @@ function bp_nouveau_ajax_addremove_friend() {
 		} else {
 			$response['feedback'] = sprintf(
 				'<div class="bp-feedback error">%s</div>',
-				esc_html__( 'Friendship request could not be cancelled.', 'buddypress' )
+				esc_html__( 'connection request could not be cancelled.', 'buddypress' )
 			);
 
 			wp_send_json_error( $response );

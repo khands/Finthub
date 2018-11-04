@@ -2301,7 +2301,7 @@ msgstr ""
 
 #: bp-core/bp-core-functions.php:3405
 #. translators: do not remove {} brackets or translate its contents.
-msgid "[{{{site.name}}}] New friendship request from {{initiator.name}}"
+msgid "[{{{site.name}}}] New connection request from {{initiator.name}}"
 msgstr ""
 
 #: bp-core/bp-core-functions.php:3407
@@ -2327,7 +2327,7 @@ msgstr ""
 
 #: bp-core/bp-core-functions.php:3413
 #. translators: do not remove {} brackets or translate its contents.
-msgid "[{{{site.name}}}] {{friend.name}} accepted your friendship request"
+msgid "[{{{site.name}}}] {{friend.name}} accepted your connection request"
 msgstr ""
 
 #: bp-core/bp-core-functions.php:3415
@@ -3392,11 +3392,11 @@ msgstr ""
 
 #: bp-friends/actions/add-friend.php:33
 #: bp-templates/bp-nouveau/includes/friends/ajax.php:195
-msgid "Friendship could not be requested."
+msgid "Connection could not be requested."
 msgstr ""
 
 #: bp-friends/actions/add-friend.php:35
-msgid "Friendship requested"
+msgid "Connection requested"
 msgstr ""
 
 #: bp-friends/actions/add-friend.php:39
@@ -3404,16 +3404,16 @@ msgid "You are already friends with this user"
 msgstr ""
 
 #: bp-friends/actions/add-friend.php:41
-msgid "You already have a pending friendship request with this user"
+msgid "You already have a pending connection request with this user"
 msgstr ""
 
 #: bp-friends/actions/remove-friend.php:33
 #: bp-templates/bp-legacy/buddypress-functions.php:1420
-msgid "Friendship could not be canceled."
+msgid "Connection could not be canceled."
 msgstr ""
 
 #: bp-friends/actions/remove-friend.php:35
-msgid "Friendship canceled"
+msgid "Connection canceled"
 msgstr ""
 
 #: bp-friends/actions/remove-friend.php:39
@@ -3421,11 +3421,11 @@ msgid "You are not yet friends with this user"
 msgstr ""
 
 #: bp-friends/actions/remove-friend.php:41
-msgid "You have a pending friendship request with this user"
+msgid "You have a pending connection request with this user"
 msgstr ""
 
 #: bp-friends/bp-friends-activity.php:104
-msgid "Friendships accepted"
+msgid "Connections accepted"
 msgstr ""
 
 #: bp-friends/bp-friends-activity.php:106
@@ -3448,19 +3448,19 @@ msgid "%1$s and %2$s are now friends"
 msgstr ""
 
 #: bp-friends/bp-friends-notifications.php:41
-msgid "%d friends accepted your friendship requests"
+msgid "%d friends accepted your connection requests"
 msgstr ""
 
 #: bp-friends/bp-friends-notifications.php:44
-msgid "%s accepted your friendship request"
+msgid "%s accepted your connection request"
 msgstr ""
 
 #: bp-friends/bp-friends-notifications.php:57
-msgid "You have %d pending friendship requests"
+msgid "You have %d pending connection requests"
 msgstr ""
 
 #: bp-friends/bp-friends-notifications.php:60
-msgid "You have a friendship request from %s"
+msgid "You have a connection request from %s"
 msgstr ""
 
 #: bp-friends/bp-friends-template.php:84
@@ -3505,15 +3505,15 @@ msgstr ""
 
 #: bp-friends/bp-friends-template.php:371
 #: bp-templates/bp-legacy/buddypress-functions.php:1432
-msgid "Cancel Friendship Request"
+msgid "Cancel connection request"
 msgstr ""
 
 #: bp-friends/bp-friends-template.php:387
-msgid "Friendship Requested"
+msgid "Connection Requested"
 msgstr ""
 
 #: bp-friends/bp-friends-template.php:403
-msgid "Cancel Friendship"
+msgid "Cancel Connection"
 msgstr ""
 
 #: bp-friends/bp-friends-template.php:419
@@ -3586,27 +3586,27 @@ msgid "Friends %s"
 msgstr ""
 
 #: bp-friends/screens/requests.php:21
-msgid "Friendship accepted"
+msgid "Connection accepted"
 msgstr ""
 
 #: bp-friends/screens/requests.php:23
-msgid "Friendship could not be accepted"
+msgid "Connection could not be accepted"
 msgstr ""
 
 #: bp-friends/screens/requests.php:32
-msgid "Friendship rejected"
+msgid "Connection rejected"
 msgstr ""
 
 #: bp-friends/screens/requests.php:34
-msgid "Friendship could not be rejected"
+msgid "Connection could not be rejected"
 msgstr ""
 
 #: bp-friends/screens/requests.php:43
-msgid "Friendship request withdrawn"
+msgid "connection request withdrawn"
 msgstr ""
 
 #: bp-friends/screens/requests.php:45
-msgid "Friendship request could not be withdrawn"
+msgid "connection request could not be withdrawn"
 msgstr ""
 
 #: bp-groups/actions/access.php:34
@@ -6769,12 +6769,12 @@ msgstr ""
 
 #: bp-templates/bp-legacy/buddypress/members/single/friends/requests.php:21
 #. translators: accessibility text
-msgid "Friendship requests"
+msgid "connection requests"
 msgstr ""
 
 #: bp-templates/bp-legacy/buddypress/members/single/friends/requests.php:108
 #: bp-templates/bp-nouveau/includes/functions.php:1017
-msgid "You have no pending friendship requests."
+msgid "You have no pending connection requests."
 msgstr ""
 
 #: bp-templates/bp-legacy/buddypress/members/single/friends.php:59
@@ -7167,12 +7167,12 @@ msgid "No member found by that ID."
 msgstr ""
 
 #: bp-templates/bp-legacy/buddypress-functions.php:1430
-msgid " Friendship could not be requested."
+msgid " Connection could not be requested."
 msgstr ""
 
 #: bp-templates/bp-legacy/buddypress-functions.php:1442
 #: bp-templates/bp-nouveau/includes/friends/ajax.php:210
-msgid "Friendship request could not be cancelled."
+msgid "connection request could not be cancelled."
 msgstr ""
 
 #: bp-templates/bp-legacy/buddypress-functions.php:1447
@@ -7461,7 +7461,7 @@ msgid "You can set the preferences of the %1$s or add %2$s to it."
 msgstr ""
 
 #: bp-templates/bp-nouveau/buddypress/members/single/friends/requests.php:10
-msgid "Friendship Requests"
+msgid "connection requests"
 msgstr ""
 
 #: bp-templates/bp-nouveau/buddypress/members/single/friends.php:10
@@ -7827,27 +7827,27 @@ msgid "There was a problem performing this action. Please try again."
 msgstr ""
 
 #: bp-templates/bp-nouveau/includes/friends/ajax.php:130
-msgid "Friendship accepted."
+msgid "Connection accepted."
 msgstr ""
 
 #: bp-templates/bp-nouveau/includes/friends/ajax.php:154
-msgid "Friendship rejected."
+msgid "Connection rejected."
 msgstr ""
 
 #: bp-templates/bp-nouveau/includes/friends/ajax.php:167
-msgid "Friendship could not be cancelled."
+msgid "Connection could not be cancelled."
 msgstr ""
 
 #: bp-templates/bp-nouveau/includes/friends/ajax.php:180
-msgid "Friendship cancelled."
+msgid "Connection cancelled."
 msgstr ""
 
 #: bp-templates/bp-nouveau/includes/friends/loader.php:101
-msgid "Accepted friendship requests"
+msgid "Accepted connection requests"
 msgstr ""
 
 #: bp-templates/bp-nouveau/includes/friends/loader.php:106
-msgid "Pending friendship requests"
+msgid "Pending connection requests"
 msgstr ""
 
 #: bp-templates/bp-nouveau/includes/functions.php:319
@@ -9468,12 +9468,12 @@ msgstr ""
 
 #: bp-friends/bp-friends-notifications.php:260
 msgctxt "Friend settings on notification settings page"
-msgid "A member sends you a friendship request"
+msgid "A member sends you a connection request"
 msgstr ""
 
 #: bp-friends/bp-friends-notifications.php:272
 msgctxt "Friend settings on notification settings page"
-msgid "A member accepts your friendship request"
+msgid "A member accepts your connection request"
 msgstr ""
 
 #: bp-friends/classes/class-bp-friends-component.php:30
@@ -9483,7 +9483,7 @@ msgstr ""
 
 #: bp-friends/classes/class-bp-friends-component.php:194
 msgctxt "Friends screen sub nav"
-msgid "Friendships"
+msgid "Connections"
 msgstr ""
 
 #: bp-friends/classes/class-bp-friends-component.php:204
@@ -9515,7 +9515,7 @@ msgstr ""
 
 #: bp-friends/classes/class-bp-friends-component.php:264
 msgctxt "My Account Friends menu sub nav"
-msgid "Friendships"
+msgid "Connections"
 msgstr ""
 
 #: bp-groups/bp-groups-admin.php:32
